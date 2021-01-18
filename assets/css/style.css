@@ -1,0 +1,635 @@
+                                /**
+* Template Name: Appland - v2.3.0
+* Template URL: https://bootstrapmade.com/free-bootstrap-app-landing-page-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+                                /*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+                                
+                                body {
+                                    font-family: "Open Sans", sans-serif;
+                                    color: #fff;
+                                }
+                                
+                                a {
+                                    color: #5777ba;
+                                }
+                                
+                                a:hover {
+                                    color: #7b94c9;
+                                    text-decoration: none;
+                                }
+                                
+                                h1,
+                                h2,
+                                h3,
+                                h4,
+                                h5,
+                                h6 {
+                                    font-family: "Raleway", sans-serif;
+                                }
+                                
+                                #undernav {
+                                    background-image: url(../img/new\ fond.png);
+                                    background-size: cover;
+                                }
+                                /*--------------------------------------------------------------
+# NAV
+--------------------------------------------------------------*/
+                                
+                                nav {
+                                    background-color: #fff;
+                                }
+                                
+                                nav .ten-cols {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                                
+                                nav .ten-cols .col-md-1 p {
+                                    font-family: 'PT Serif', serif;
+                                    font-weight: 700;
+                                    font-size: 20px;
+                                    color: #666666;
+                                    padding: 10px 0 0 0;
+                                }
+                                
+                                nav .ten-cols .col-md-4 {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                                
+                                nav .ten-cols .col-md-1 button {
+                                    color: white;
+                                    background-color: #A39382;
+                                    padding: 10px 15px;
+                                    border-radius: 4px;
+                                    font-size: 18px;
+                                    border: none;
+                                }
+                                
+                                @media (max-width: 1024px) {
+                                    nav .ten-cols .col-md-1 p {
+                                        font-size: 15px;
+                                        padding: 10px 0 0 0;
+                                    }
+                                    nav .ten-cols .col-md-1 button {
+                                        font-size: 10px;
+                                    }
+                                }
+                                
+                                @media (max-width: 500px) {
+                                    nav .col-md-1 {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        justify-content: center;
+                                    }
+                                    nav .col-md-4 img {
+                                        width: 200px;
+                                    }
+                                }
+                                /*--------------------------------------------------------------
+# POP UP
+--------------------------------------------------------------*/
+                                
+                                .popup .overlay {
+                                    position: fixed;
+                                    top: 0px;
+                                    left: 0px;
+                                    width: 100vw;
+                                    height: 100vh;
+                                    background: rgba(0, 0, 0, 0.7);
+                                    z-index: 998;
+                                    display: none;
+                                }
+                                
+                                .popup .content {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%) scale(0);
+                                    background: #a39382d0;
+                                    width: 70%;
+                                    z-index: 999;
+                                    box-sizing: border-box;
+                                    font-family: "Open Sans", sans-serif;
+                                }
+                                
+                                .popup .close-btn {
+                                    cursor: pointer;
+                                    position: absolute;
+                                    width: 30px;
+                                    height: 30px;
+                                    background: #222;
+                                    color: #fff;
+                                    font-size: 25px;
+                                    font-weight: 600;
+                                    line-height: 30px;
+                                    text-align: center;
+                                    border-radius: 50%;
+                                }
+                                
+                                .popup.active .overlay {
+                                    display: block;
+                                }
+                                
+                                .popup.active .content {
+                                    transition: all 300ms ease-in-out;
+                                    transform: translate(-50%, -50%) scale(1);
+                                }
+                                
+                                .popup.active .content .buy_title {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    justify-content: space-around;
+                                    color: #fff;
+                                    font-size: 45px;
+                                    text-align: center;
+                                }
+                                
+                                .popup.active .content .buy_title h2 {
+                                    width: 50%;
+                                    background-color: #7a6855;
+                                    padding: 20px 0;
+                                    border-radius: 10px;
+                                }
+                                
+                                .popup.active .content .buy_title h2:last-child {
+                                    opacity: 0.6;
+                                }
+                                
+                                .popup .ten-cols img {
+                                    max-width: 130px;
+                                }
+                                
+                                .popup .ten-cols p {
+                                    font-size: 35px;
+                                    color: #000;
+                                }
+                                
+                                #line_popup :hover {
+                                    background-color: #a39382;
+                                    transition: 0.6s;
+                                    transition-delay: 0.1s;
+                                }
+                                /*--------------------------------------------------------------
+# DEMO
+--------------------------------------------------------------*/
+                                
+                                #hero {
+                                    width: 100%;
+                                    position: relative;
+                                    overflow: hidden;
+                                    padding: 140px 0 100px 0;
+                                    margin-bottom: -75px;
+                                }
+                                
+                                #hero h1 {
+                                    margin: 150px 0 10px 0;
+                                    font-size: 42px;
+                                    font-weight: 500;
+                                    line-height: 56px;
+                                    color: #fff;
+                                    text-align: center;
+                                }
+                                
+                                #hero .download-btn {
+                                    font-family: "Raleway", sans-serif;
+                                    font-weight: 500;
+                                    font-size: 24px;
+                                    display: inline-block;
+                                    padding: 8px 24px 10px 46px;
+                                    border-radius: 3px;
+                                    transition: 0.5s;
+                                    color: #000;
+                                    background: #ffffff;
+                                    position: relative;
+                                    width: 220px;
+                                    margin: 40px 0 0 0;
+                                    align-self: center;
+                                }
+                                
+                                #hero .download-btn:hover {
+                                    background: #A39382;
+                                    color: #fff
+                                }
+                                
+                                #hero .download-btn i {
+                                    font-size: 24px;
+                                    position: absolute;
+                                    left: 18px;
+                                    top: 13px;
+                                }
+                                
+                                @media (max-width: 991px) {
+                                    #hero {
+                                        text-align: center;
+                                    }
+                                    #hero .download-btn+.download-btn {
+                                        margin: 0 10px;
+                                    }
+                                    #hero .hero-img {
+                                        text-align: center;
+                                    }
+                                    #hero .hero-img img {
+                                        width: 60%;
+                                    }
+                                }
+                                
+                                @media (max-width: 1024px) {
+                                    #hero h1 {
+                                        margin: 20px 0 10px 0;
+                                    }
+                                }
+                                
+                                @media (max-width: 768px) {
+                                    #hero h1 {
+                                        font-size: 28px;
+                                        line-height: 36px;
+                                    }
+                                    #hero h2 {
+                                        font-size: 18px;
+                                        line-height: 24px;
+                                        margin-bottom: 30px;
+                                    }
+                                    #hero .hero-img img {
+                                        width: 70%;
+                                    }
+                                    #hero {
+                                        padding: 0;
+                                    }
+                                }
+                                
+                                @media (max-width: 575px) {
+                                    #hero .hero-img img {
+                                        width: 80%;
+                                    }
+                                    #hero .download-btn+.download-btn {
+                                        margin: 30px 0px;
+                                    }
+                                }
+                                /*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+                                
+                                section {
+                                    padding: 60px 0;
+                                    overflow: hidden;
+                                }
+                                
+                                .section-title {
+                                    text-align: center;
+                                    padding-bottom: 30px;
+                                }
+                                
+                                .section-title h2 {
+                                    font-size: 55px;
+                                    font-weight: 400;
+                                    margin-bottom: 20px;
+                                    padding-bottom: 0;
+                                    font-family: "Poppins", sans-serif;
+                                }
+                                
+                                .section-title p {
+                                    margin-bottom: 0;
+                                    color: #fff;
+                                    font-size: 24px;
+                                }
+                                /*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+                                
+                                .gallery {
+                                    overflow: hidden;
+                                }
+                                
+                                .gallery .owl-nav,
+                                .gallery .owl-dots {
+                                    margin-top: 40px;
+                                    text-align: center;
+                                }
+                                
+                                .gallery .owl-item {
+                                    transition: 0.3s ease-in-out;
+                                }
+                                
+                                .gallery .owl-dot {
+                                    display: inline-block;
+                                    margin: 0 5px;
+                                    width: 12px;
+                                    height: 12px;
+                                    border-radius: 50%;
+                                }
+                                
+                                .gallery .gallery-carousel {
+                                    padding-top: 30px;
+                                }
+                                
+                                .gallery .gallery-carousel .owl-stage-outer {
+                                    overflow: visible;
+                                }
+                                
+                                @media (min-width: 992px) {
+                                    .gallery .gallery-carousel .center {
+                                        border: 6px solid #5777ba;
+                                        padding: 4px;
+                                        background: #fff;
+                                        z-index: 1;
+                                        transform: scale(1.2);
+                                        margin-top: 10px;
+                                        border-radius: 25px;
+                                    }
+                                }
+                                /*--------------------------------------------------------------
+# STUDIO
+--------------------------------------------------------------*/
+                                
+                                .image_studio {
+                                    max-width: 100%;
+                                }
+                                /*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+                                
+                                .testimonials .testimonial-wrap {
+                                    padding-left: 50px;
+                                }
+                                
+                                .testimonials .owl-nav,
+                                .testimonials .owl-dots {
+                                    margin-top: 5px;
+                                    text-align: center;
+                                }
+                                
+                                .testimonials .owl-dot {
+                                    display: inline-block;
+                                    margin: 0 5px;
+                                    width: 12px;
+                                    height: 12px;
+                                    border-radius: 50%;
+                                    background-color: #ddd !important;
+                                }
+                                
+                                .testimonials .owl-dot.active {
+                                    background-color: #7a6855 !important;
+                                }
+                                
+                                @media (max-width: 767px) {
+                                    .testimonials .testimonial-wrap {
+                                        padding-left: 0;
+                                    }
+                                }
+                                /*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+                                
+                                .pricing .row {
+                                    padding-top: 40px;
+                                }
+                                
+                                .pricing .box {
+                                    padding: 40px;
+                                    margin-bottom: 30px;
+                                    box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+                                    background: #fff;
+                                    text-align: center;
+                                }
+                                
+                                .pricing h3 {
+                                    font-weight: 300;
+                                    margin-bottom: 15px;
+                                    font-size: 28px;
+                                }
+                                
+                                .pricing h4 {
+                                    font-size: 46px;
+                                    color: #5777ba;
+                                    font-weight: 400;
+                                    font-family: "Open Sans", sans-serif;
+                                    margin-bottom: 25px;
+                                }
+                                
+                                .pricing h4 span {
+                                    color: #bababa;
+                                    font-size: 18px;
+                                    display: block;
+                                }
+                                
+                                .pricing ul {
+                                    padding: 0;
+                                    list-style: none;
+                                    color: #999;
+                                    text-align: left;
+                                    line-height: 20px;
+                                }
+                                
+                                .pricing ul li {
+                                    padding-bottom: 12px;
+                                }
+                                
+                                .pricing ul i {
+                                    color: #5777ba;
+                                    font-size: 18px;
+                                    padding-right: 4px;
+                                }
+                                
+                                .pricing ul .na {
+                                    color: #ccc;
+                                }
+                                
+                                .pricing ul .na i {
+                                    color: #ccc;
+                                }
+                                
+                                .pricing ul .na span {
+                                    text-decoration: line-through;
+                                }
+                                
+                                .pricing .get-started-btn {
+                                    background: #47536e;
+                                    display: inline-block;
+                                    padding: 6px 30px;
+                                    border-radius: 20px;
+                                    color: #fff;
+                                    transition: none;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    font-family: "Raleway", sans-serif;
+                                    transition: 0.3s;
+                                }
+                                
+                                .pricing .get-started-btn:hover {
+                                    background: #5777ba;
+                                }
+                                
+                                .pricing .featured {
+                                    z-index: 10;
+                                    margin: -30px -5px 0 -5px;
+                                }
+                                
+                                .pricing .featured .get-started-btn {
+                                    background: #5777ba;
+                                }
+                                
+                                .pricing .featured .get-started-btn:hover {
+                                    background: #748ec6;
+                                }
+                                
+                                @media (max-width: 992px) {
+                                    .pricing .box {
+                                        max-width: 60%;
+                                        margin: 0 auto 30px auto;
+                                    }
+                                }
+                                
+                                @media (max-width: 767px) {
+                                    .pricing .box {
+                                        max-width: 80%;
+                                        margin: 0 auto 30px auto;
+                                    }
+                                }
+                                
+                                @media (max-width: 420px) {
+                                    .pricing .box {
+                                        max-width: 100%;
+                                        margin: 0 auto 30px auto;
+                                    }
+                                }
+                                /*--------------------------------------------------------------
+# Frequently Asked Questions
+--------------------------------------------------------------*/
+                                
+                                .section-title h2 {
+                                    color: #7A6855;
+                                }
+                                
+                                .faq .accordion-list {
+                                    padding: 0 100px;
+                                    color: #ffffff;
+                                }
+                                
+                                .faq .accordion-list ul {
+                                    padding: 0;
+                                    list-style: none;
+                                }
+                                
+                                .faq .accordion-list li+li {
+                                    margin-top: 15px;
+                                }
+                                
+                                .faq .accordion-list li {
+                                    padding: 20px;
+                                    background: #fff;
+                                    border-radius: 4px;
+                                    position: relative;
+                                    background-color: #B7A99A;
+                                }
+                                
+                                .faq .accordion-list a {
+                                    display: block;
+                                    position: relative;
+                                    font-family: "Poppins", sans-serif;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    font-weight: 500;
+                                    padding: 0 30px;
+                                    outline: none;
+                                    color: #ffffff;
+                                }
+                                
+                                .faq .accordion-list .icon-show,
+                                .faq .accordion-list .icon-close {
+                                    font-size: 24px;
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                }
+                                
+                                .faq .accordion-list p {
+                                    margin-bottom: 0;
+                                    padding: 10px 0 0 0;
+                                    color: #ffffff;
+                                }
+                                
+                                .faq .accordion-list .icon-show {
+                                    display: none;
+                                }
+                                
+                                .faq .accordion-list a.collapsed:hover {
+                                    color: #5777ba;
+                                }
+                                
+                                .faq .accordion-list a.collapsed .icon-show {
+                                    display: inline-block;
+                                }
+                                
+                                .faq .accordion-list a.collapsed .icon-close {
+                                    display: none;
+                                }
+                                
+                                .collapse {
+                                    color: #ffffff;
+                                }
+                                
+                                @media (max-width: 1200px) {
+                                    .faq .accordion-list {
+                                        padding: 0;
+                                    }
+                                }
+                                /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+                                
+                                footer .logos_foot img {
+                                    max-width: 110px;
+                                }
+                                
+                                footer .logos_foot {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                                
+                                footer .choix_langue {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                                
+                                footer .col-md-6 {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                                
+                                footer .col-md-6 p {
+                                    text-align: center;
+                                    color: #fff;
+                                    font-size: 15px;
+                                    max-width: 475px;
+                                }
+                                
+                                select {
+                                    background-color: #000;
+                                    color: #fff;
+                                    border: none;
+                                    width: 100px;
+                                    padding: 6px 4px;
+                                    border-radius: 4px;
+                                }
+                                
+                                .langue {
+                                    max-width: 50px;
+                                }
+                                
+                                @media (max-width: 500px) {
+                                    footer .col-md-6 p {
+                                        margin: 10px;
+                                    }
+                                }
